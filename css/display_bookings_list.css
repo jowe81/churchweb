@@ -1,0 +1,63 @@
+
+.booking {
+  border:1px solid black;
+  font-size:80%;
+  margin:2px;
+}
+
+.bk_roomname {
+  width:50%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:white;
+  color:black;
+  font-weight:bold;
+}
+
+.bk_time {
+  width:50%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:white;
+  color:black;
+  text-align:right;
+  font-weight:bold;
+}
+
+.bk_multi {
+  width:100%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:#EEE;
+  color:black;
+  text-align:right;
+}
+
+.bk_field {
+  width:100%;
+}
+
+.bk_field_header{
+  width:25%;
+  float:left;
+  margin:0px;
+  padding:2px;
+}
+
+.bk_field_data{
+  width:70%;
+  float:left;
+  margin:0px;
+  padding:2px;
+}
+
+.bk_progress_bar{
+  float:left;
+  height:5px;
+  background:red;
+  white-space:nowrap;
+  color:white;
+}

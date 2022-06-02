@@ -1,0 +1,50 @@
+div table, div tr, td {
+  vertical-align:middle;
+}
+
+td,tr {
+  padding:1px;
+  margin:0px;
+  height:17px;
+}
+
+
+/* td's with field captions*/
+
+/* table */
+.ticket_display {
+  width:600px;
+  border:1px solid gray;
+  border-top:none;
+  float:left;  
+}
+
+.ticket_display td {
+  color:navy;
+}
+
+.ticket_display .caption {
+  background:#EED;
+  color:gray;
+  width:120px;
+}
+
+.ticket_display .table_data {
+  width:180px;
+}
+
+
+/* div */
+.ticket_header {
+  background:gray;
+  color:white;
+  padding-left:2px;
+  padding-right:2px;
+  padding:2px;
+}
+
+a {
+  cursor:pointer;
+}
+
+

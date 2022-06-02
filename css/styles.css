@@ -1,0 +1,196 @@
+body {
+  font-size:12pt;
+  font-family:Arial;
+}
+
+table,tr,td {
+  vertical-align:top;
+}
+
+table {
+  border-collapse:collapse;
+}
+
+td {
+  height:25px;
+}
+
+th {
+  text-align:left;
+  font-weight:normal;
+  color:gray;
+}
+
+
+h4 {
+  font-weight:bold;
+  color:gray;
+  padding:0px;
+  margin:0px;
+  
+}
+
+/* mark up odd/even table rows*/
+
+.odd {
+  background:#EFEFEF;
+}
+
+.even {
+  background:#FAFAFA;
+}
+
+.odd:hover, .even:hover {
+  background:#DDDDFF;
+}
+
+.odd td, .even td {
+  vertical-align:top;
+}
+
+.small_note{
+  font-size:70%;
+}
+
+.small_caption {
+  font-size:70%;
+}
+
+.data {
+  color:navy;
+}
+
+.gray {
+  color:gray;
+}
+
+.red {
+  color:red;
+}
+
+.green {
+	color:green;
+}
+
+.yellow {
+  color:yellow;
+}
+
+.redbg, .redbg:hover {
+  background:#FAA;
+}
+
+.greenbg, .greenbg:hover {
+  background:#BFB;
+}
+
+.small {
+  font-size:80%;
+}
+
+/* Overwrite defaults for jquery ui widgets */
+.ui-widget, .ui-widget input, .ui-widget select{
+  font-family:Arial,sans-serif;
+  font-size:1em;
+}
+
+/* Simpletip tooltips */
+
+.tooltip {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:30;
+  display:none;
+  color:#88F;
+  background:#EAEAFF;
+  padding:2px;
+  border:1px solid gray;  
+}
+
+#church_clock {
+  position:absolute;
+  left:200px;
+  top:300px;
+  width:800px;
+  height:290px;
+  background:#FFF;
+  color:#CCC;
+  font-size:240px;
+  text-align:center;
+  border:0px solid gray;
+  font-family:Courier new, monospace;
+  overflow:hidden;
+}
+
+#church_clock_dots {
+  color:black;
+  font-size:10px;
+  position:absolute;
+  left:10px;
+  top:215px;
+}
+
+#church_clock_time {
+  height:240px;
+  overflow:hidden;
+}
+
+#church_clock_date {
+  font-size:45px;
+  height:50px;
+  overflow:hidden;
+  margin-bottom:-10px;
+  font-weight:bold;
+}
+
+/* conversations general */
+.conversation_contribution {
+  background:#FFE;
+  padding:1px;
+  padding-left:3px;
+  font-size:75%;
+}
+
+.conversation_contribution_indent {
+  margin-left:5px;
+  border-left:1px solid black;
+  padding-left:5px;  
+}
+
+
+.conversation_contribution_header {
+  color:gray;
+  font-size:80%;
+}
+
+.conversation_note {
+  background:white;
+  border:1px solid gray;
+  margin:1px;
+}
+
+.conversation_response {
+  background:#FFE;
+  margin-left:5px;
+  border-left:1px solid black;
+  padding-left:3px;
+  display:none;
+}
+
+.conversation_response input{
+  font-size:10pt;
+  width:98%;
+  height:20px;
+  background:#FFE;
+  border:none;
+}
+
+.conversation_wrapper{
+  background:#FFC;
+  padding:2px;
+}
+
+.conversation_add_note{
+  font-size:10pt;
+}

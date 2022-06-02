@@ -1,0 +1,138 @@
+/* The suckerfish menus */
+#nav, #nav ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+  /*line-height:1;*/
+}
+
+#nav a {
+  display:block;
+  width:10em;
+}
+
+#nav li {
+  float:left;
+  width:10em;
+}
+
+#nav li ul {
+  position:absolute;
+  width:10em;
+  left:-999em;
+  z-index:999;
+}
+
+#nav li:hover ul{
+  left:auto;
+}
+
+/* level 3 */
+#nav li ul ul {
+  margin:-1.62em 0 0 9.8em;
+}
+
+
+#nav li:hover ul ul {
+  left:-999em;
+}
+
+#nav li li:hover ul{
+  left:auto;
+}
+
+
+/* My modifications */
+
+#nav, #nav ul{
+  background:gray;
+  color:white;
+  position:relative;
+}
+
+#nav ul{
+  margin-top:3px;
+  border:1px solid #CCC;
+}
+
+#nav ul li ul{
+  margin-top:-23px;  /* adjust the vertical position of third level lists*/
+}
+
+#nav li {
+  background:gray;
+  padding:.2em 0;
+}
+
+#nav li ul li {
+  padding:.2em;
+  width:9.6em;
+}
+
+#nav li ul li:hover {
+  background:#EEE;
+}
+
+/* Needed so the link text doesn't go white when mouse hovers bw the link and the ul-border */
+
+#nav li ul li:hover a{
+  color:black;
+}
+
+#nav a {
+  text-decoration:none;
+  color:white;
+}
+
+#nav li ul li a:hover {
+  color:black;
+}
+
+/* Third level color scheme */
+#nav li ul li:hover ul li a{
+  color:white;
+}
+
+#nav li ul li:hover ul li a:hover{
+  color:black;
+}
+
+#nav li ul li:hover ul li:hover a{
+  color:black;
+}
+
+
+
+/* Sub menu */
+
+#nav_sub, #nav_sub ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+
+#nav_sub a {
+  display:block;
+  text-decoration:none;
+  color:white;
+  font-size:80%;
+}
+
+#nav_sub li {
+  float:left;
+  padding:0px 7px;
+}
+
+#nav_sub li:hover {
+  background:black;
+  padding-top:5px;  /*pull down submenus on hover */
+  padding-bottom:5px;
+  border-bottom:2px solid gray;
+  z-index:20;
+}
+
+#nav_sub a {
+}
+
+

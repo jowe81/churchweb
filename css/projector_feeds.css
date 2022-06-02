@@ -1,0 +1,76 @@
+
+.list_container {
+	float:left;
+	width:400px;
+	height:500px;	
+	border-right:1px dotted gray;
+	margin:10px;
+	padding:10px;
+	overflow:hidden;
+}
+
+.list {
+	width:380px;
+	height:420px;	
+	border:1px solid gray;
+	margin:5px;
+	padding:5px;
+	overflow-y:auto;
+}
+
+
+.service_record {
+	border:1px dotted gray;
+	padding:5px;
+	margin:3px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+	cursor:pointer;
+}
+
+.service_record:hover {
+	background:#DDDDFF;
+}
+
+.service_name{
+	font-weight:bold;
+}
+
+.feed_desc{
+	padding:5px;
+	margin:3px;
+	border:1px dotted gray;
+	cursor:pointer;
+}
+
+.feed_desc:hover{
+	background:#DDDDFF;
+}
+
+.feed_title{
+	
+}
+
+.feed_viewers{
+	font-size:80%;
+	color:gray;
+}
+
+.feed_operator{
+	font-size:80%;
+}
+
+
+.feed_ready{
+	background:#EEFFEE;
+}
+
+.feed_orphaned {
+	background:#FFEEEE;
+}
+
+.orphaned_feed_head{
+	font-weight:bold;
+	color:red;
+}

@@ -1,0 +1,442 @@
+
+/* Table for individual entry view */
+#cd_ind_view_table {
+  width:100%;
+  border-collapse:collapse;
+  cursor:pointer;
+}
+
+#cd_ind_view_table td{
+  padding:4px 2px;
+}
+
+
+
+#title_header {
+  width:100%;
+  font-size:90%;
+  background:#559;
+  height:18px;
+  padding-top:2px;
+  text-align:center;
+  font-weight:bold;
+  color:white;
+}
+
+#music_piece_details_container {
+  padding:5px;
+  width:300px;
+  height:500px;
+  float:left;
+  border-right:1px solid #CCC;  
+}
+
+  #music_piece_details_container input[type=text] {
+    width:280px;
+    margin-left:10px;
+  }
+
+#lyrics_fragments_container {
+  padding:5px;
+  width:300px;
+  height:500px;
+  float:left;
+  border-right:1px solid #CCC;    
+}
+
+  /* the box */
+  #lyrics_fragments {
+    border:1px dotted gray;
+    margin:0px;
+    padding:2px;
+    height:300px;  
+    overflow-y:scroll;
+  }
+ 
+  /* the divs holding fragment contents*/
+  .lyrics_fragment_div {
+    font-size:80%;
+    border:1px solid gray;
+    margin:1px;
+    padding:0px;
+  } 
+  
+  .lyrics_fragment_div_head {
+    font-size:85%;
+    background:#FEE;
+    padding-left:2px;
+    padding-right:2px;
+  }
+  
+  .lyrics_fragment_div_head a {
+    text-decoration:none;
+    color:black;
+  }
+
+  .lyrics_fragment_div_head a:hover {
+    text-decoration:underline;
+    color:black;
+  }
+  
+  .lyrics_fragment_div_content {
+    padding:2px;
+    background:#FAFAFF;
+    /*Display vertical line in background to indicate line-break position for presentations*/
+    background-image:url('../img/redline.gif');
+    background-repeat:no-repeat;
+    background-position:230px 0px;
+    
+  }
+  
+  .lyrics_fragment_div_content hr {
+    margin-top:0px;
+    margin-bottom:0px;
+    height:1px;
+    border-width:0;
+    color:#CCC;
+    background-color:#CCC;
+  }
+  
+  /*The div surrounding the textarea*/
+  #new_lyrics_fragment {
+    border:1px dotted gray;
+    margin:0px;
+    padding:2px;
+    height:74px;
+  }
+  
+  /*the textarea*/
+  #lyrics_fragment_textarea {
+    width:290px;
+    height:70px;
+    resize:none;
+    border:none;
+    background:white;
+    font-size:80%;
+    /*Display vertical line in background to indicate line-break position for presentations*/
+    background-image:url('../img/redline.gif');
+    background-repeat:no-repeat;
+    background-position:230px 0px;
+      
+  } 
+  
+#scripture_refs_and_themes_container {
+  padding:5px;
+  width:210px;
+  height:500px;
+  float:left;
+  border-right:1px solid #CCC;    
+}
+
+  #scripture_refs_container {
+    height:220px;  
+  }
+  
+    #scripture_refs_container input[type=text] {
+      width:195px;
+      margin-left:10px;
+    }
+    
+    #scripture_refs_container select {
+      height:72px;
+      margin-left:10px;
+      width:195px;
+    }
+  
+    #scripture_refs_container input[type=button] {
+      width:195px;
+      margin-left:10px;
+    }
+    
+  #themes_container {
+    border-top:1px solid #CCC;
+    padding-top:5px;
+  }
+  
+    #themes_container input[type=text] {
+      width:195px;
+      margin-left:10px;
+    }
+    
+    #themes_container select {
+      height:100px;
+      margin-left:10px;
+      width:195px;
+    }
+  
+    #themes_container input[type=button] {
+      width:195px;
+      margin-left:10px;
+    }
+  
+#arrangement_list_container {
+  padding:5px;
+  width:380px;
+  height:500px;
+  float:left;
+  position:relative;  
+}
+
+  #add_arrangement_link_container {
+	position:absolute;
+	left:180px;
+	font-size:80%;
+	width:200px;
+	text-align:right;    
+  }
+
+  /* the box */
+  #arrangements {
+    border:1px dotted gray;
+    margin:0px;
+    padding:2px;
+    height:299px;  
+    overflow-y:scroll;
+    margin-bottom:6px;
+  }
+ 
+  /* the divs holding arr details*/
+  .arrangement_div {
+    font-size:70%;
+    border:1px solid gray;
+    margin:1px;
+    padding:0px;
+  } 
+  
+  .arrangement_div_head {
+    background:#DDFFDD;
+    padding-left:2px;
+    padding-right:2px;
+  }
+  
+  .arrangement_div_head a {
+    text-decoration:none;
+    color:black;
+  }
+
+  .arrangement_div_head a:hover {
+    text-decoration:underline;
+    color:black;
+  }
+  
+  .arrangement_div_content {
+    padding:2px;
+  }
+  
+    .arr_div_line {
+      display:inline-block;
+      width:100%;
+    }
+    
+    .arr_div_line .l {
+      width:70px;
+      float:left;
+      background:#FFF;
+    }
+    
+    .arr_div_line .r {
+      float:left;
+      width:270px;
+      background:#EEF;
+      color:navy;
+      /*height:15px;*/
+    }
+      
+  .retired_arr {
+    background:#BBB;
+    color:black;
+    text-align:center;
+  }
+  
+  .retired_arr a {
+    color:white;
+    text-decoration:none;
+  }
+  
+  .retired_arr a:hover {
+    text-decoration:underline;
+  }
+  
+  #background {
+    border:1px dotted gray;
+    margin:0px;
+    padding:2px;
+    height:120px;  
+    overflow:hidden;  
+  }
+  
+  #background div {
+  	float:left;
+  	height:120px;
+  	width:185px;
+  	text-align:center;
+  }
+  
+  #background div img{
+  	padding-top:3px;
+  }
+
+  #bg_image_container{
+  }
+  
+/* edit arr modal */
+.modal_body div {
+  padding:5px;
+}
+
+  #source_container {
+  }
+  
+    #source_container input[type=text] {
+      width:195px;
+      margin-left:10px;    
+    }
+
+  #style_tags_container {
+  }
+  
+    #style_tags_container input[type=text] {
+      width:195px;
+      margin-left:10px;
+    }
+    
+    #style_tags_container select {
+      height:98px;
+      margin-left:10px;
+      width:195px;
+    }
+  
+    #style_tags_container input[type=button] {
+      width:195px;
+      margin-left:10px;
+    }
+
+  #parts_container {
+  }
+  
+    #parts_container input[type=text] {
+      width:265px;
+      margin-left:10px;
+    }
+    
+    #parts_container select {
+      height:175px;
+      margin-left:10px;
+      width:265px;
+    }
+  
+    #parts_container input[type=button] {
+      width:265px;
+      margin-left:10px;
+    }
+
+  #other_files_container {
+    height:276px;
+  }
+  
+    #other_files_container input[type=text] {
+      width:265px;
+      margin-left:10px;
+    }
+    
+    #other_files_container select {
+      height:100px;
+      margin-left:10px;
+      width:265px;
+    }
+  
+    #other_files_container input[type=button] {
+      width:265px;
+      margin-left:10px;
+    }
+
+  #keychanges_container {
+    height:160px;
+  }
+  
+    #keychanges_container input[type=text] {
+      width:265px;
+      margin-left:10px;
+    }
+    
+    #keychanges_container #keychanges {
+      height:50px;
+      margin-left:10px;
+      width:140px;
+    }
+  
+    #keychanges_container input[type=button] {
+      width:110px;
+      margin-left:10px;
+    }
+
+
+  #lyrics_sequence_container {
+  }
+
+    #lyrics_sequence_container div {
+      padding:0px;
+    } 
+
+    #lyrics_sequence_container ul {
+      list-style:none;
+      padding:1px;
+      width:310px;
+      margin:0px;
+      margin-bottom:7px;
+      font-size:10px;        
+    }
+    
+    #lyrics_sequence_container #fragment_selector {
+      display:inline-block;
+      margin:0px;
+      padding:0px;
+      margin-top:5px;
+    }
+    
+    #lyrics_sequence_container #fragment_selector li {
+      background:#EEF;
+      display:inline-block;
+      float:left;
+      padding:0px;  
+      cursor:pointer;
+      margin:0px;
+      padding:2px;
+      border:1px solid gray;
+    }
+
+    #lyrics_sequence_container #fragment_selector .blankslide_li {
+      background:#EAEAEA;
+      color:gray;    
+    }
+      
+    #lyrics_sequence_container #fragment_selector li div {
+      width:80px;
+      font-size:13px;
+      display:inline-block;
+      color:black;
+    }
+
+    #placeholder div{
+      color:gray;
+      font-size:13px;
+    }    
+
+    #sortable {
+      height:370px; 
+      overflow-y:scroll;   
+    }
+    
+    #sortable li {
+      background:white;
+      border:none;  
+      cursor:pointer;
+      padding:3px 1px;
+    }  
+    
+    #sortable li:hover{
+      background:#F5F5F5;  
+    }
+
+
+

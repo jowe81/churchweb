@@ -1,0 +1,92 @@
+#tasks {
+  padding:5px;
+  width:199px;
+  height:100%;
+  float:left;
+  border-left:1px solid #CCC;  
+}
+
+#services_list_container {
+  width:1010px;
+  height:100%;
+  float:left;
+}
+
+#services_list_inner_container {
+  width:990px;
+  /*height:550px;
+  overflow-y:auto;*/
+}
+
+#services_list {
+  margin:5px;
+  padding:5px;
+  cursor:pointer;
+}
+
+#administrative_links {
+  list-style:none;
+}
+
+#administrative_links li {
+  margin:0px;
+  padding:0px;
+  margin-left:-20px;
+  padding-top:3px;
+}
+
+/* Links */
+
+#main_content a {
+  text-decoration:underline;
+  color:#007;
+}
+
+#main_content a:hover {
+  background:#EEF;
+}
+
+#links {
+  list-style:none;
+  font-size:80%;
+  margin-left:-10px;
+}
+
+#links li {
+  margin:0px;
+  padding:0px;
+  margin-left:-20px;
+  padding-top:3px;
+}
+
+    .confirmed {
+      background:url('../img/yes.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;         
+    }
+    
+    .disconfirmed {
+      background:url('../img/no.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+
+    .pending {
+      background:url('../img/pending.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+    
+

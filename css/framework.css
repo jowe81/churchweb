@@ -1,0 +1,370 @@
+html,body {
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+body {
+  background-image:url('../img/gradient_gbv.jpg');
+  background-repeat:repeat-x;
+}
+
+#outer_container {
+  height:100%;
+  width:1250px;
+  margin:0 auto;
+  padding:0 0px;  
+  border-right:1px dotted gray;
+  border-left:1px dotted gray;
+  position:relative;
+  background:white;
+  overflow:hidden;  
+}
+
+#top_container {
+  height:43px;
+  width:100%;
+  background:gray;
+}
+
+
+  #logo {
+    width:140px;
+    height:42px;
+    float:left;
+  }
+  
+  #menus {
+    width:988px;
+    height:42px;
+    float:left;
+  }
+  
+    #main_menu {
+      width:100%;
+      height:25px;
+      float:left;
+    }
+
+    #service_title {
+      width:100%;
+      float:left;
+      padding-top:.2em; /*Bring the contents to the same level as the menu items - see menu.css*/
+      padding-bottom:.2em;
+      color:white;
+    }
+    
+    #sub_menu {
+      width:100%;
+      height:16px;
+      float:left;
+      border-top:1px solid #CCC;
+    }
+  
+  #quick_links {
+    width:110px;
+    height:40px;
+    float:right;
+    text-align:right;
+    padding-top:.2em; /*Bring the contents to the same level as the menu items - see menu.css*/
+    padding-right:10px;
+    color:white;
+  }
+  
+  #quick_links a {
+    text-decoration:none;
+    color:white;
+  }
+  
+  #quick_links #current_user_info{
+    font-size:50%;
+    color:white;
+  }
+
+
+#main_content {
+  width:100%;
+  overflow-y:scroll;
+  /*height gets set with javascript*/
+}
+
+
+
+/*************** Links in main body of content *****************/
+
+#main_content a {
+  text-decoration:underline;
+  /*font-size:80%;*/
+  color:#007;
+}
+
+#main_content a:hover {
+  background:#EEF;
+}
+
+#main_content .blink {
+  background:gray;
+  border:1px solid black;
+  text-decoration:none;
+  color:white;
+  padding:2px 5px;
+}
+
+#main_content .blink:hover {
+  background:black;
+}
+
+/* Modal window */
+#modal {
+  width:700px;
+  /*height:300px;*/
+  background:white;
+  position:absolute;
+  top:175px;
+  left:275px;
+  padding:0px;
+  border:1px solid black;
+}
+
+.modal_head {
+  width:100%;
+  height:22px;
+  color:white;
+  background:black;
+  font-size:100%;
+  text-align:center;
+}
+
+.modal_body {
+  width:100%;
+  padding:5px;
+}
+       
+/* Logo Image*/
+#cw_logo {
+  padding-left:18px;
+  padding-top:3px;
+  border:0;
+}
+
+/* Messages and error message */
+#message,#error_message {
+  position:absolute;
+  left:440px;
+  top:100px;
+  width:400px;
+  height:200px;
+  background:#DDD;
+  border:1px solid black;
+  font-size:150%;  
+}
+
+#error_message {
+  border:1px solid red; /* Overwrite border color */
+  background:#FDD;
+}
+
+#message_title {
+  width:100%;
+  height:15px;
+  background:gray;
+  color:white;
+  font-size:12px;
+  margin:0px auto;
+  text-align:center;
+}
+
+#error_message #message_title{
+  background:red;
+}
+
+#message_top {
+  width:90%;
+  height:130px;
+  margin:5px auto;
+}
+
+#message_bottom{
+  height:30px;
+  padding:0px 5px;
+}
+
+#message_button {
+  background:gray;
+  margin:0px 5px;
+  padding:2px 5px;
+  border:1px solid black; 
+  float:left;
+} 
+
+#message_button a {
+  text-decoration:none;
+  color:white;
+}
+
+#message_button a:hover{
+  background:black;
+}
+
+
+#message_button:hover {
+  background:black;
+}
+
+/* General Buttons */
+
+.button,input[type=submit],input[type=reset],input[type=button] {
+  background:gray;
+  margin:3px 0px;
+  padding:4px 5px;
+  border:1px solid black; 
+  float:left;
+  text-decoration:none;
+  color:white;
+  cursor:pointer;
+  text-align:center;
+  font-size:100%;
+  margin-right:5px;
+  vertical-align:center;
+}
+
+.button:hover,input[type=submit]:hover,input[type=reset]:hover,input[type=button]:hover {
+  background:black;
+}
+
+.button a {
+  text-decoration:none;
+  color:white;
+}
+
+/*Default buttons*/
+.button_default {
+  background:#444;
+}
+
+input[type=submit] {
+
+}
+
+textarea {
+  width:400px;
+  height:100px;
+  font-family:arial;
+  font-size:100%;
+  border:1px solid gray;
+  padding:0;
+  margin:2px;
+  background:#EEE;
+}
+
+input[type=text],input[type=password] {
+  font-size:100%;
+  border:1px solid gray;
+  padding:0;
+  margin:2px;
+  background:#EEE;
+  width:200px;
+  height:25px;
+}
+
+/* Select */
+
+select {
+  border:1px solid gray;
+  padding:5px;
+  margin:2px;
+  background:#eee;
+  font-size:100%;
+}
+
+input[type=text],input[type=password],textarea,select {
+  color:navy;
+}
+/* Explanations */
+span.expl {
+  font-size:70%;
+  color:#88F;
+}
+
+div.expl {
+  float:right;
+  background:#EAEAFF;
+  width:210px;
+  padding:10px;
+  font-size:70%;
+  color:#99F;
+  background-image:url('../img/qmark.gif');
+  background-repeat:no-repeat;
+  background-position:right bottom;
+  
+}
+
+div.expl a {
+  color:#66F;
+}
+
+div.expl ul {
+  padding-left:15px;
+}
+
+
+h4 {
+  font-size:14px;
+  margin:0px;
+  padding:0px;
+}
+
+h5 {
+  font-size:12px;
+  margin:0px;
+  padding:0px;
+  font-weight:normal;
+}
+
+/* popup during file generation */
+#please_wait {
+  position:absolute;
+  top:150px;
+  left:380px;
+  width:500px;
+  height:100px;
+  background:gray;
+  border:1px solid black;
+  margin:5px;
+  padding:20px;
+  padding-top:80px;
+  color:white;
+  font-size:120%;
+  text-align:center;
+  z-index:999;
+}
+
+
+
+/* Submenu table */
+#submenu_table {
+  width:100%;
+  border-bottom:1px solid gray;
+}
+
+  #submenu_table td {
+    padding-top:10px;  
+    padding-bottom:5px;  
+    text-align:center;
+    background:gray;
+    color:white;
+  }
+  
+  #submenu_table a {
+    color:white;
+    text-decoration:none;
+    padding:3px;
+  }
+  
+  #submenu_table a:hover {
+    background:gray;
+    color:white;
+    text-decoration:underline;
+  }

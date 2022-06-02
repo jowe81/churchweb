@@ -1,0 +1,60 @@
+/*Wrapper for list table cd office view*/
+#cd_list {
+  width:100%;
+  overflow-y:auto;
+  height:90%;
+
+}
+
+/* Table for individual entry view */
+#cd_ind_view_table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+#cd_ind_view_table td{
+  padding:4px 2px;
+}
+
+/* Div wraps around all contact options for a person*/
+.cd_contact_options_wrap_div {
+  margin:0px;
+  border:0px;
+  width:400px;
+}
+
+.cd_contact_options_key_div {
+  margin:0px;
+  border:0px;
+  width:120px;
+  font-size:70%;
+  color:gray;
+}
+
+.cd_contact_options_value_div {
+  margin:0px;
+  border:0px;
+  width:270px;
+}
+
+/* Filter controls */
+#cd_filter_controls {
+  padding:13px 3px;
+  border-bottom:1px solid gray;
+  margin-bottom:15px;
+  background:#FFA;
+}
+
+/* right most table cell in directory table*/
+.status{
+  font-size:70%;
+  text-align:right;
+  color:gray;
+}
+
+th {
+  height:70%;
+  font-size:70%;
+  font-weight:bold;
+  border-bottom:2px solid gray;
+}

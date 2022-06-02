@@ -1,0 +1,47 @@
+/* System message on home table*/
+#system_message_container{
+  width:800px;
+  border:1px solid gray;
+  margin:30px auto;
+  background:#EEC;
+  height:210px;
+}
+  
+  #system_message_container .header {
+    font-size:80%;
+    padding:4px;
+    background:black;
+    color:white;
+    height:25px;
+  }
+
+  #system_message_container .header div{
+    padding:0px;
+    background:black;
+    color:white;
+  }
+
+  #system_message_container .message {
+    padding:2px;
+    overflow-y:auto;
+    height:173px;
+  }
+  
+  #system_message_container .message .subject {
+    font-weight:bold;
+    padding-bottom:5px;  
+  }
+
+  
+  #system_message_container a {
+    color:white;
+    text-decoration:none;
+    padding:3px;
+  }
+  
+  #system_message_container a:hover {
+    background:black;
+    color:white;
+    text-decoration:underline;
+    cursor:pointer;
+  }

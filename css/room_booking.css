@@ -1,0 +1,72 @@
+/* The actual booking calendar */
+#dest_element {
+ width:1010px;
+ float:left;
+ margin:0px;
+ padding:1px;
+ border:1px solid white;
+}
+
+#room_selection,#time_selection {
+  width:210px;
+  float:right;
+  padding:2px;
+  margin:2px;
+  border:1px solid gray;
+}
+#selection_divs {
+  float:right;
+  width:214px;
+}
+
+
+.hour_block {
+  font-size:9px;
+  height:25px;      /* Influences calculation of booking div positioning*/
+  border-bottom:1px dotted orange;
+  background:#FFE;
+  width:200px; /* necessary or IE goes crazy*/
+}
+
+.hour_block_night {
+  background:#EFF;
+}
+
+.day_column {
+  width:200px;
+  float:left;
+  border:1px solid white;
+  position:relative;
+}
+
+#day_column_header{
+  height:22px;
+  background:navy;
+  color:white;
+  text-align:center;
+}
+
+.booking {
+  position:absolute;
+  border:1px solid gray;
+  background:#FDF;
+  color:black;
+  left:25px;
+  width:171px;
+  font-size:10px;
+  overflow:auto;
+}
+
+.booking_overhang {
+  background:#DDD;
+  border:1px solid #DDD;
+}
+
+.arrow {
+  position:absolute;
+  left:20px;
+  width:180px;
+  height:9px;
+  background-repeat:no-repeat;
+}
+

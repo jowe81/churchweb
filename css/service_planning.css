@@ -1,0 +1,1016 @@
+/* Links in service planning always a bit smaller */
+#main_content a {
+  font-size:80%;
+}
+
+
+#tasks {
+  padding:3px;
+  margin:2px;
+  width:219px;
+  float:left;
+  border:1px dotted white;
+}
+
+#service_list_filter{
+  border:1px dotted gray;
+  margin:2px;
+  padding:3px;
+  margin-top:15px;
+  width:219px;
+  float:left;
+  font-size:80%;
+}
+
+#services_list_container {
+  width:990px;
+  height:100%;
+  float:left;
+}
+
+#services_list_inner_container {
+  width:970px;
+  /*height:550px;
+  overflow-y:auto;*/
+  /*border-right:1px solid #CCC;*/
+}
+
+#services_list {
+  margin:5px;
+  padding:5px;
+  cursor:pointer;
+}
+
+
+.church_service {
+  clear:both;
+  overflow:auto;
+  border-top:1px dotted #CCC;
+  border-left:2px solid white;
+}
+
+.past {
+  background:#EEE;
+}
+
+.this_week {
+  /*background:#FFFFA0;*/
+}
+
+.in_progress {
+  background:#CAFF70 !important;
+}
+
+.church_service:hover {
+  background:#DDDDFF;
+}
+
+.service_includes_me{
+  border-left:2px solid white;
+  background:#FFDEDE;
+}
+
+.week_container {
+  padding:5px;
+  border:1px solid white;
+  overflow:auto;
+  width:950px;
+}
+
+.week_info {
+  font-weight:bold;
+}
+
+.d_service_name {
+  padding-left:8px;
+  width:290px;
+  float:left;
+}
+
+  .d_update_info {
+    font-size:70%;
+    color:gray;
+    padding-left:5px;  
+  }
+  
+  .d_abstract {
+    font-size:70%;
+    color:black;
+    padding-left:5px;  
+  }
+    
+    .d_abstract_text{
+      width:580px;
+      padding:5px;
+      margin:5px;
+      color:navy;
+      position:relative;
+      background:white;
+      border:1px solid blue;
+    }
+
+.d_service_info {
+  width:650px;
+  overflow:auto;
+  float:left;
+}
+
+  .d_service_title {
+    overflow:auto;
+    clear:both;
+    padding:2px;
+  }
+  
+  .d_details {
+    overflow:auto;
+    padding:2px;
+    font-size:70%;
+    color:gray;
+    float:left;
+  }
+  
+    .d_leadership_leftcol {
+      float:left;
+      width:105px;
+      text-align:right;
+      color:#333;
+    }
+
+    .d_leadership_rightcol {
+      float:left;
+      overflow-x:hidden;
+      padding-left:5px;
+      color:black;
+    }
+  
+  .d_times {
+    overflow:auto;
+    float:right;
+    padding:2px;
+    font-size:80%;
+  }
+     
+    .d_timescol {
+      float:left;
+      overflow:auto;
+      width:250px;
+    }
+
+    .d_startsincol {
+      float:right;
+      overflow:auto;
+      width:80px;
+    }
+
+.d_open_positions {
+  clear:both;
+  font-size:70%;
+  padding:2px;
+  padding-left:10px;
+}
+
+.services_navigation {
+  width:950px;
+  overflow:auto;
+  clear:both;
+  padding:5px;
+  background:#EEE;
+  border:1px solid gray;
+  margin-bottom:5px;
+  text-align:center;
+}
+
+.fjumpto {
+  width:100px;
+  padding:0px;
+  margin:0px;
+  font-size:80%;
+  height:80%;
+}
+
+/* service name */
+.sl1 {
+  width:200px;
+  font-size:80%;
+}
+
+/* title */
+.sl2 {
+  width:400px;
+  vertical-align:middle;
+}
+
+/* date */
+.sl3 {
+  width:210px;
+  font-size:80%;
+  vertical-align:middle;
+}
+
+/* time */
+.sl4 {
+  width:70px;
+  font-size:80%;
+  vertical-align:middle;
+}
+
+/* begins in... */
+.sl5 {
+  width:71px;
+  font-size:80%;
+  vertical-align:middle;
+  color:gray;
+}
+
+.sl6 {
+  font-size:60%;height:100%;
+}
+
+#administrative_links {
+  list-style:none;
+}
+
+#administrative_links li {
+  margin:0px;
+  padding:0px;
+  margin-left:-20px;
+  padding-top:3px;
+}
+
+/* Open positions in services list */
+
+.can_volunteer {
+  text-decoration:underline;
+}
+
+.have_volunteered {
+  background:yellow;
+}
+
+.volunteer {
+  color:green;
+}
+
+.no_volunteer {
+  color:red;
+}
+
+/* The Service planning interface */
+
+#left_container {
+  width:310px;
+  height:100%;
+  float:left;
+}
+  #left_container h4 {
+    margin-top:10px;
+    margin-bottom:2px;
+  }
+
+  #notification_note{
+    background:#DDDDFF;
+    font-size:70%;
+    text-align:center;
+    padding:5px;
+  }
+  
+  #rehearsal_list{
+    font-size:70%;
+  }
+  
+    .rehearsal_caption {
+      font-weight:bold;
+      margin-top:5px;
+      margin-bottom:5px;
+      border-top:1px solid gray;
+      background:#EEF;
+    }
+    
+    .rehearsal_location {
+      font-weight:normal;
+      color:gray;
+    }
+
+    .rehearsal_data {
+      margin-left:20px;
+      text-align:right;
+    }
+
+  #rehearsal_sched_pos_type_container{
+    width:930px;
+    height:230px;
+    overflow:auto;
+  }
+  
+  .postype_link{
+    cursor:pointer;
+  }
+  
+  .postype_link:hover{
+    font-weight:bold;
+    color:navy;
+  }
+
+  .rehearsal_sched_pos_type{
+    width:215px;
+    float:left;
+    font-size:70%;
+    border:1px solid gray;
+    margin:2px;
+    height:200px;
+    overflow-y:auto;
+    padding:3px;
+  }
+
+  .rehearsal_sched_pos_type div{
+    padding-left:0px;
+  }
+  
+  .rehearsal_sched_pos_type p{
+    margin:0px;
+    text-decoration:underline;
+  }
+
+  
+  
+  /* Date-time inputs in rehearsal schedule dialogue */
+  .borderless {
+    border:none;
+    float:left;
+    width:30px;
+    background:white;
+    border-bottom:1px solid gray;
+    margin:2px;
+    height:30px;  
+  }
+
+
+  #schedule_rehearsal_link{
+    background:#EEE;
+    text-align:left;
+    font-size:80%;
+    padding:1px;
+  }
+
+  #schedule_rehearsal_link a{
+    font-size:100%;
+  }
+
+  #schedule_person_link{
+    background:#EEE;
+    text-align:left;
+    font-size:80%;
+    padding:1px;
+    margin-top:1px;
+  }
+
+  #schedule_person_link a{
+    font-size:100%;
+  }
+
+  #open_positions_summary {
+    background:#F44;
+    color:white;
+    font-size:80%;
+    text-align:center;
+    padding:1px;
+  }
+  
+  #open_positions_summary a {
+    font-size:100%;
+    color:white;
+  }
+    
+  #open_positions_summary a:hover {
+    background:#F88;    
+  }
+
+  #open_positions_summary a.inverse {
+    color:navy;
+  }
+
+  #open_positions_summary a.inverse:hover {
+    background:#CFC;    
+  }
+
+  #available_volunteers_summary {
+    background:#FD8;
+    font-size:80%;
+    text-align:center;
+    margin-top:1px;
+    padding:1px;
+    color:#864;
+  }
+
+  #available_volunteers_summary a {
+    font-size:100%;
+  }
+
+  #available_volunteers_summary a:hover {
+    background:#FFB;
+  }
+
+  .service_plan_links{
+    background:#EEE;
+    text-align:left;
+    padding:1px;
+    font-size:80%;
+    
+  }
+
+  .service_plan_links a{
+  	font-size:100% !important;
+	
+  }
+
+  /* edit open positions */
+  
+  /* container div left list */
+  #all_available_positions {
+    float:left;
+    width:450px;
+    background:white;
+    border:1px solid gray;
+    margin:3px;
+    padding:3px;
+  }
+  
+  /* container div right list */
+  #positions_to_open {
+    float:left;
+    width:450px;
+    background:white;
+    border:1px solid gray;
+    margin:3px;
+    padding:3px;
+  }
+  
+   /* the divs on the left that contain the actual list of positions for each type */
+  .positions_to_open {
+    font-size:70%;
+    margin-left:20px;
+    background:#EEF;
+    width:92%;  
+  }
+  
+  .positions_to_open span {
+    white-space:nowrap;  
+  }
+
+  .positions_to_open span:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    background:#FAA;
+  }
+
+   /* the divs on the right that contain the actual list of positions for each type */
+  .positions_to_add span {
+    white-space:nowrap;
+  }  
+
+  .positions_to_add {
+    font-size:70%;
+    margin-left:20px;
+    background:#EEF;
+    width:92%;
+  }
+  
+  .positions_to_add span:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    background:lime;
+  }
+  
+  /*container in schedule volunteers dialogue*/
+  #list_of_available_volunteers{
+  
+  }  
+
+  #list_of_available_volunteers ul li{
+    cursor:pointer;  
+  }  
+
+  #list_of_available_volunteers ul li:hover .underline{
+    background:#EEF;
+    text-decoration:underline;
+  }  
+
+  #position_list{
+    font-size:70%;  
+  }
+  
+  #position_list td{
+    height:100%;
+  }
+
+    .caption {
+      color:#999;
+      font-weight:bold;
+      margin-top:5px;
+      margin-bottom:5px;
+      border-bottom:1px dotted gray;
+    }
+    
+    .caption_b {
+      background:#FFEECC;
+      margin-left:20px;
+    }
+    
+    .light_gray {
+      background:#FFF5F5;
+    }
+    
+    .border_bottom {
+      margin-left:20px;
+      text-align:right;
+    }
+
+    /* Links with position list */
+    .remove_position, .remove_rehearsal {
+      background:url('../img/remove_gray.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+    
+    .remove_position:hover, .remove_rehearsal:hover {
+      background:url('../img/remove.gif');    
+    }
+    
+    .edit_rehearsal {
+      background:url('../img/edit_gray.gif');
+      width:16px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+
+    .edit_rehearsal:hover {
+      background:url('../img/edit.gif');    
+    }
+
+    .pending {
+      background:url('../img/pending.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+    
+    .not_notified {
+      background:url('../img/no_notification.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+    
+    .confirmed {
+      background:url('../img/yes.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;         
+    }
+    
+    .disconfirmed {
+      background:url('../img/no.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+
+    .manual {
+      background:url('../img/manual.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;
+    }
+    
+    .download_music_for_person {
+      background:url('../img/musicnote.gif');
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;    
+    }
+    
+    .download_music_for_person:hover {
+      background:url('../img/musicnote_blue.gif');        
+    }
+    
+    .icon_space_holder {
+      width:8px;
+      height:8px;
+      margin-top:3px;
+      margin-left:3px;
+      margin-right:2px;
+      display:inline-block;        
+    }
+    
+    
+#center_container {
+  width:664px;
+  height:100%;
+  float:left;
+  /*border-left:1px solid #CCC;*/  
+}
+
+
+  #service_order ul {
+    list-style:none;
+    font-size:80%;
+    padding:1px;
+    width:650px;
+    margin:0px;
+    margin-bottom:7px;
+  }
+  
+  #service_order #element_selector {
+    display:inline-block;
+  }
+  
+  #service_order #element_selector li {
+    background:#EEF;
+    display:inline;
+    height:15px;
+    float:left;
+    font-size:80%;
+    padding:2px;  
+    cursor:pointer;
+  }
+  
+  #service_order #element_selector .etype_divider {
+    background:gray;
+    width:2px;
+    padding:2px 0px;
+    font-weight:bold;
+  }
+  
+  #sortable li {
+    background:white;
+    border:none;  
+  }  
+  
+  #sortable li:hover{
+    background:#F5F5F5;  
+  }
+  
+  .service_element {
+    display:inline-block;
+    margin:3px;    
+    width:98%;
+    cursor:pointer;
+  }
+  
+    .service_element .left {
+      width:48px;
+      float:left;
+      height:100%;
+      font-size:80%;
+    }
+    
+    .service_element .group_spacer {
+      width:10px;
+      float:left;
+      height:100%;
+    }
+  
+    .service_element .center {
+      width:430px;
+      float:left;
+      height:100%;
+    }
+    
+      .service_element_note {
+        padding-left:3px;
+        /*border-left:1px solid gray;*/
+        margin-left:10px;
+      }
+  
+    .service_element .right {
+      float:right;
+      height:100%;
+    }
+  
+  /* pre-post-main service divider*/
+  .divider {
+    font-size:70%;
+    cursor:default;
+  }  
+  
+  /* Divider element that's group header */
+  .group_header {
+    font-weight:bold;
+  }
+  
+  .sermon_title{
+    /*font-weight:normal;*/
+  }
+  
+  .element_label {
+    font-weight:bold;
+  }
+  
+  .scripture_ref {
+    font-size:120%;
+  }
+
+  #element_type_specific_interface {
+    background:#CCC;
+  }  
+
+  .lyrics_fragment_div_content hr {
+    margin-top:0px;
+    margin-bottom:0px;
+    height:1px;
+    border-width:0;
+    color:#CCC;
+    background-color:#CCC;
+  }
+
+  /*Holds the service order*/
+  #sortable {
+    border:1px dotted gray;
+    background:#F3F3F3;
+  }
+  
+  #sortable .divider_li {
+    margin-top:0px;
+    background:#EEE;
+  }
+  
+  
+  /* Applied when hovering for delete*/
+  .red_bg {
+    background:red;  
+  }
+  
+
+#right_container {
+  width:249px;
+  height:100%;
+  float:left;
+  /*border-left:1px solid #CCC;*/  
+}
+
+
+
+/* Edit service element: music / lyrics */
+
+  #lyrics_sequence_container {
+    margin-top:5px;
+  }
+
+    #lyrics_sequence_container ul {
+      list-style:none;
+      padding:0px;
+      width:560px;
+      margin:0px;
+      margin-bottom:7px;
+      font-size:10px;        
+    }
+    
+    #lyrics_sequence_container #fragment_selector {
+      display:inline-block;
+      margin:0px;
+      padding:0px;
+      margin-top:0px;
+      width:110px;
+      height:270px;
+      overflow-y=scroll;
+      float:left;
+    }
+    
+    #lyrics_sequence_container #fragment_selector li {
+      background:#EEF;
+      display:inline-block;
+      float:left;
+      padding:0px;  
+      cursor:pointer;
+      margin:0px;
+      padding:2px;
+      border:1px solid gray;
+      width:100px;
+      text-align:center;
+    }
+    
+    #lyrics_sequence_container #fragment_selector .blankslide_li {
+      background:#EAEAEA;
+      color:gray;    
+    }
+  
+    #lyrics_sequence_container #fragment_selector li div {
+      width:80px;
+      font-size:13px;
+      display:inline-block;
+      color:black;
+    }
+
+    #placeholder div{
+      color:gray;
+      font-size:13px;
+    }    
+
+    #lsortable {
+      height:268px; 
+      overflow-y:scroll;
+      float:right;
+      background:#EEE;   
+    }
+    
+    #lsortable li {
+      background:white;
+      border:none;  
+      cursor:pointer;
+      padding:3px 1px;
+    }  
+    
+    #lsortable li:hover{
+      background:#F5F5F5;  
+    }
+
+  #select_people_in_service_element {
+    font-size:80%;
+    background:#eee;
+    border:1px solid gray;
+    color:navy;
+  }
+  
+  #bg_preview_img {
+  	
+  }
+  
+  #service_element_files {
+  	width:200px;
+  	height:144px;
+  	font-size:80%;
+  }
+  
+/* Edit music package */
+
+#actual_selection_outer_container{
+  overflow:auto;
+  float:left;
+  padding:2px;
+  margin:2px;
+}
+
+#actual_selection_container{
+  padding:2px;
+  margin:2px;
+  border:1px solid gray;
+  height:300px;
+  width:420px;
+  overflow:auto;
+  font-size:80%;
+  background:#EEE;
+}
+
+.actual_selection_item{
+  font-style:italic;
+  padding:2px;
+  margin:2px;
+  border-bottom:1px dotted gray;
+  overflow:auto;
+}
+
+.actual_selection_item .as_left{
+ float:left;
+ overflow:auto;
+}
+
+.actual_selection_item .as_right{
+  /*width:142px;*/
+  float:right;
+  overflow:auto;
+  color:gray;
+  font-style:normal;
+  text-align:right;
+}
+
+
+#music_package_music_pieces_outer_container {
+  overflow:auto;
+  float:left;
+  padding:2px;
+  margin:2px;
+}
+
+#music_package_music_pieces_container {
+  width:450px;
+  padding:2px;
+  margin:2px;
+  border:1px solid gray;
+  height:400px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.music_package_music_piece{
+  overflow:auto;
+  font-size:80%;
+}
+
+.music_package_music_piece:hover{
+  background:#EEE;
+}
+
+.music_package_music_piece .music_package_music_piece_title{
+  padding-top:5px;
+  font-style:italic;
+}
+
+.music_package_music_piece .music_package_music_piece_parts{
+  color:#555;
+  padding-left:5px;
+}
+
+.music_package_music_piece .music_package_music_piece_parts a{
+  color:#555;
+}
+
+.music_package_music_piece .music_package_music_piece_parts a:hover{
+  background:#EEF;
+  color:blue;
+}
+
+.link:hover{
+  text-decoration:underline;
+  cursor:pointer;  
+}
+
+#coffee_order {
+  height:400px;
+  width:928px;
+  background:#F5DBA4;
+  overflow:auto;
+  padding:5px;
+  border:1px solid gray;
+}
+
+#coffee_order select {
+  padding:0px;
+}
+
+#coffee_order .addon_label {
+  font-size:8pt;
+  text-align:center;
+  vertical-align:bottom;
+  padding: 0px 5px;
+}
+
+#coffee_order .addon_select {
+  text-align:center;
+  border-right:1px solid white;
+  padding: 0px 5px;
+  width:60px;
+}
+
+
+/* Projection settings */
+
+#ps_overwrite_defaults {
+	padding:5px;
+	display:none;
+}
+
+.ps_container {
+	float:left;
+	width:500px;
+	height:520px;
+	padding:5px;	
+}
+
+#ps_bg_preview{
+	padding:10px 0px;
+	position:relative;
+}
+
+.overwrite{
+	background:rgba(0,0,0,0.7);
+	color:rgba(255,255,0,0.7);
+	position:absolute;
+	left:10px;
+	top:15px;
+	font-size:80%;
+}

@@ -1,0 +1,117 @@
+#date_picker_wrap {
+  background:#EEE;
+  padding-top:15px;
+  height:84px;
+}
+
+#date_picker_selected_day{
+  clear:both;
+  height:20px;
+  padding:2px auto;
+  padding-top:5px;
+  text-align:center;
+  font-weight:bold;
+}
+
+#date_picker_wrap .datepicker_day {
+  margin:1px;
+  width:20px;
+  height:45px;
+  cursor:pointer;
+}
+
+#date_picker_wrap .datepicker_day:hover {
+  background:black;
+  color:white;
+}
+
+#date_picker_wrap .datepicker_day:hover a{
+  color:white;
+}
+
+#date_picker_wrap .datepicker_sunday {
+  background:#FBB;
+  border:1px solid gray;
+}
+
+#date_picker_wrap .datepicker_saturday {
+  background:#FDD;
+  border:1px solid gray;
+}
+
+#date_picker_wrap .datepicker_other_day {
+  background:#FFF5F5;
+  border:1px solid gray;
+}
+
+#date_picker_wrap .datepicker_today {
+  border:1px solid black;
+  border-bottom:3px solid black;
+}
+
+#date_picker_wrap .datepicker_past {
+  color:gray;
+  border:1px dotted gray;
+}
+
+#date_picker_wrap .datepicker_future {
+}
+
+#date_picker_wrap .datepicker_month {
+  margin:1px;
+  width:30px;
+  height:45px;
+  cursor:pointer;  
+}
+
+#date_picker_wrap .datepicker_month:hover {
+  background:black;
+  color:white;
+}
+
+#date_picker_wrap .datepicker_month:hover a{
+  color:white;
+}
+
+#date_picker_wrap a {
+  text-decoration:none;
+  color:black;
+}
+
+#date_picker_wrap a:hover {
+  text-decoration:none;
+  color:white;
+}
+
+#date_picker_wrap .datepicker_divider {
+  float:left;
+  margin:1px;
+  width:1px;
+  height:50px;
+  background:gray;
+  margin-left:2px;margin-right:2px;
+}
+
+#date_picker_wrap .datepicker_relative_nav {
+  text-align:center;
+  float:left;
+  margin:1px;
+  width:124px;
+  height:45px;
+  padding:2px;
+  border:1px solid gray;
+}
+
+#date_picker_wrap .datepicker_relative_nav span{
+  text-decoration:none;
+  color:black;
+  border:none;
+  cursor:pointer;
+}
+
+#date_picker_wrap .datepicker_relative_nav span:hover{
+  background:black;
+  color:white;
+}
+
+

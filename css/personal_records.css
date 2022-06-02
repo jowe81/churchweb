@@ -1,0 +1,74 @@
+/*Wrapper for list table pr view*/
+#cd_list {
+  width:100%;
+  margin:10px auto;
+  overflow-y:auto;
+  height:90%;             
+}
+
+/* Table for individual entry view */
+#cd_ind_view_table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+#cd_ind_view_table td{
+  padding:4px 2px;
+}
+
+/* Filter controls */
+#cd_filter_controls {
+  padding:13px 3px;
+  border-bottom:1px solid gray;
+  margin-bottom:15px;
+  background:#FFA;
+}
+
+table,tr,td {
+  vertical-align:middle;
+}
+
+td {
+  height:25px;
+}
+
+
+/* Addresses on file, in address edit dialogue*/
+.addr_div {
+ margin:2px;
+ padding:2px;
+ border:1px solid #AAA;
+ background:#DDF;
+}
+
+.primary_addr {
+  background:#FDD;
+}
+.delete_addr {
+  font-size:70%;
+  background:#999;
+  color:#EEE;
+  text-align:right;
+  padding-right:2px;
+  padding-left:2px;
+}
+
+.delete_addr div {
+  float:left;
+  font-weight:bold;
+}
+
+.delete_addr a {
+  color:white;
+  text-decoration:underline;
+}
+
+.delete_addr a:hover {
+  color:#FFCCCC;
+}
+
+.delete_addr:hover {
+  /*background:black;
+  color:white;*/
+}
+

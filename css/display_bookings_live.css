@@ -1,0 +1,151 @@
+
+/* Live display */
+
+#topline_container{
+  height:600px;
+  width:202px;
+  margin: 2px;
+  float:left;
+}
+
+.topline {
+  width:200px;
+  font-size:80%;
+  background:#115511;
+  color:#8D8;
+  padding:3px 0px;
+  margin:0px;
+  text-align:center;
+  float:left;
+  margin-bottom:10px;
+}
+
+.topline div {
+  color:white;
+}
+
+
+#booking_clock_container {
+  background:blue;
+  color: white;
+}
+
+#booking_clock {
+  font-size:200%;
+}
+#booking_clock_date {
+  font-size:80%;
+}
+
+#display_container {
+  width:1000px;
+  background:gray;
+  margin:2px;
+  height:600px;
+  float:left;
+}
+
+#left_display_container {
+  width:33%;
+  background:#EEF;
+  float:left;
+  height:100%;
+}
+
+.display_data {
+  height:560px;
+  overflow:auto;
+  padding:2px;
+}
+
+#center_display_container {
+  width:34%;
+  background:#FEE;
+  float:left;
+  height:100%;
+}
+
+#right_display_container {
+  width:33%;
+  background:#EFE;
+  float:left;
+  height:100%;
+}
+
+.display_header {
+  height:30px;
+  vertical-align:middle;
+  background:navy;
+  color:white;
+  text-align:center;
+  font-size:120%;
+  padding:2px 0px;
+  width:100%;
+}
+
+.booking {
+  border:1px solid black;
+  font-size:80%;
+  margin:2px;
+}
+
+.bk_roomname {
+  width:50%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:black;
+  color:white;
+}
+
+.bk_time {
+  width:50%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:black;
+  color:white;
+  text-align:right;
+}
+
+.bk_multi {
+  width:100%;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background:maroon;
+  color:white;
+  text-align:right;
+}
+
+.bk_field {
+  width:100%;
+}
+
+.bk_field_header{
+  width:25%;
+  float:left;
+  margin:0px;
+  padding:2px;
+}
+
+.bk_field_data{
+  width:70%;
+  float:left;
+  margin:0px;
+  padding:2px;
+}
+
+.bk_progress_bar{
+  float:left;
+  height:5px;
+  background:red;
+  white-space:nowrap;
+  color:white;
+}
+
+/* Overwrite main_content color*/
+#main_content {
+  background:black;
+  overflow:auto;
+}
